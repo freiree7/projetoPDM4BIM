@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- Imagem do objeto -->
+    <ImageView
+        android:id="@+id/objeto_imagem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Imagem do objeto" />
+
+    <!-- Nome do objeto -->
+    <TextView
+        android:id="@+id/objeto_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/objeto_imagem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tipo do objeto -->
+    <TextView
+        android:id="@+id/objeto_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/objeto_nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Poder do objeto -->
+    <TextView
+        android:id="@+id/objeto_poder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poder"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/objeto_tipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- História do objeto -->
+    <TextView
+        android:id="@+id/objeto_historia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="História"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/objeto_poder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/botaoCompartilhar"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Compartilhar"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/objeto_imagem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
